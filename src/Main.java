@@ -112,6 +112,7 @@ public class Main {
         new Product("Laptop", 3500, 10,null
                 ,true,3500.0);
         new Product("TV", 1500, 4,null ,true,240.0);
+        new Product("Card", 180, 4,null ,false,null);
 
         Customer c1 = new Customer("Mohamed", 20000);
         Cart cart= new Cart();
@@ -120,6 +121,7 @@ public class Main {
         cart.addToCart("TV", 3);
         cart.addToCart("Laptop", 2);
         cart.addToCart("laptop", 2);
+        cart.addToCart("Card", 4);
 
 
         CheckOut.validatingPayment(c1,cart);
